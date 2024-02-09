@@ -1,0 +1,12 @@
+.vscode
+target
+cache
+scripts
+.scannerwork
+docs/.*
+dist
+dist/**
+appsec-desktop-*
+**/bin
+**/obj  
+**/.idea

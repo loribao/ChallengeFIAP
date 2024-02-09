@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>            
+  </PropertyGroup>
+    
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.1" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src-blazor\src-blazor.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="dist\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="dist\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="dist\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="dist\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="dist\web.config" />
+    <_ContentIncludedByDefault Remove="dist\wwwroot\web.config" />
+    <_ContentIncludedByDefault Remove="dist\wwwroot\_content\src-blazor\sample-data\weather.json" />
+    <_ContentIncludedByDefault Remove="dist\wwwroot\_framework\blazor.boot.json" />
+  </ItemGroup>
+
+</Project>

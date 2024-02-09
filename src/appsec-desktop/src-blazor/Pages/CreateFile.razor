@@ -1,0 +1,16 @@
+﻿@page "/createfile"
+<div>
+    <h3>Create File</h3>
+    <input type="text" placeholder="Name File" onchange="fileContent">
+    <input type="text" placeholder="Text Content" onchange="fileContent">
+    <input type="search" >
+    <button>Save</button>
+</div>
+@{
+    string fileName = "";
+    string fileContent = "";
+    void SaveFile()
+    {
+        Console.WriteLine(fileName);
+    }
+}
