@@ -4,7 +4,6 @@ namespace src_maui;
 
 public static class MauiProgram
 {
-	public static IServiceCollection serviceCollection;
 	public static MauiApp CreateMauiApp()
 	{
 		var builder = MauiApp.CreateBuilder();
@@ -14,7 +13,7 @@ public static class MauiProgram
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 			});
-		serviceCollection = builder.Services;
+		
 		builder.Services.AddScoped<HttpClient>();
 		builder.Services.AddMauiBlazorWebView();
 

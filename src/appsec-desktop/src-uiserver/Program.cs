@@ -12,4 +12,3 @@ builder.Services.AddScoped<HttpClient>();
 var app = builder.Build();
 
 await app.RunAsync();
-

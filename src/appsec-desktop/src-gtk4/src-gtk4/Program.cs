@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System.Runtime.Versioning;
 using System;
+using Microsoft.Extensions.Logging.Console;
 using SrcBlazor;
 
 [UnsupportedOSPlatform("OSX")]
