@@ -8,5 +8,6 @@ dist
 dist/**
 appsec-desktop-*
 **/bin
-**/obj  
+**/obj
 **/.idea
+docs/proposal/.~lock.Atualização Vulture.odt#
