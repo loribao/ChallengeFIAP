@@ -10,7 +10,7 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "name": "appdemo",
+  "name": "appdemo-test4",
   "description": "teste",
   "urlGit": "https://github.com/loribao/app_demo_dotnet_elasticagent_sonar",
   "branchGit": "develop",
