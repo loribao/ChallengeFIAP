@@ -1,3 +1,3 @@
 [workspace]
-members = [ "src/src-data","src/src-domain"]
+members = [ "appsec-repos"]
 resolver = "2"

@@ -4,3 +4,16 @@
 # https://lakret.net/blog/2023-03-10-tailwind-with-yew
 
 # Elastic+kibana https://www.elastic.co/pt/blog/getting-started-with-the-elastic-stack-and-docker-compose
+
+#Criação da migration
+```bash
+dotnet ef migrations add init --startup-project ../AppSec/AppSec.csproj
+```
+
+#aplicando migration
+```bash
+dotnet ef database update --startup-project ../AppSec/AppSec.csproj
+```
+
+
+
